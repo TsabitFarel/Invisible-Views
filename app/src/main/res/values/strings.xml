@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">InvisibleViews</string>
+    <string name="testing_image">testing_image</string>
+    <string name="just_testing_the_views">Just Testing the Views.</string>
+    <string name="chillin_with_the_views">Chillin with the Views.</string>
+    <string name="test">Just a Test</string>
+    <string name="ganti_gambar">Ganti Gambar</string>
+    <string name="undo">Undo?</string>
+    <string name="why_the_image_change">Why the Image Change?</string>
+    <string name="wassup_yow">Wassup yow</string>
+    <string name="cari_ae_di_kodingan">Cari ae di Kodingan.</string>
+</resources>

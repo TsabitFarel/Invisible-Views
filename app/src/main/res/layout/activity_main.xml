@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/smoothColor"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="@string/testing_image"
+        android:layout_centerInParent="true"
+        android:src="@drawable/flasking" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chillin_with_the_views"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:id="@+id/txtWhy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/why_the_image_change"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="24sp"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp" />
+
+    <TextView
+        android:id="@+id/txtIdk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cari_ae_di_kodingan"
+        android:visibility="invisible"
+        android:textColor="@color/purple_200"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="24sp"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp" />
+
+    <TextView
+        android:id="@+id/txtTroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wassup_yow"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="24sp"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        app:backgroundTint="@color/white"
+        android:textColor="@color/purple_200"
+        app:cornerRadius="8dp"
+        android:text="@string/ganti_gambar"
+        android:layout_below="@id/imageView"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUndo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        app:backgroundTint="@color/purple_200"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp"
+        android:text="@string/undo"
+        android:layout_below="@id/imageView"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
