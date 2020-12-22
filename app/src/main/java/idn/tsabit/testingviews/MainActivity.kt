@@ -28,19 +28,27 @@ class MainActivity : AppCompatActivity() {
         textViewIdk = findViewById(R.id.txtIdk)
 
         button.setOnClickListener {
-            imageView.setImageResource(R.drawable.troll)
-            textView.visibility = View.VISIBLE
-            button.visibility = View.INVISIBLE
-            buttonUndo.visibility = View.VISIBLE
+            changeImage()
         }
 
         buttonUndo.setOnClickListener {
-            imageView.setImageResource(R.drawable.flask)
-            textViewWhy.visibility = View.VISIBLE
-            textView.visibility = View.INVISIBLE
-            button.visibility = View.INVISIBLE
-            buttonUndo.visibility = View.INVISIBLE
-            textViewIdk.visibility = View.VISIBLE
+            undo()
         }
+    }
+
+    private fun changeImage() {
+        imageView.setImageResource(R.drawable.troll)
+        textView.visibility = View.VISIBLE
+        button.visibility = View.INVISIBLE
+        buttonUndo.visibility = View.VISIBLE
+    }
+
+    private fun undo() {
+        imageView.setImageResource(R.drawable.flask)
+        textViewWhy.visibility = View.VISIBLE
+        textView.visibility = View.INVISIBLE
+        button.visibility = View.INVISIBLE
+        buttonUndo.visibility = View.INVISIBLE
+        textViewIdk.visibility = View.VISIBLE
     }
 }
